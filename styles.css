@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #eceff4;
+}
+
+h2,h3 {
+    margin: 0;
+}
+
+.wrapper {
+    padding: 1em;
+    max-width: 960px;
+    margin: 1em auto;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.header {
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+}
+
+.header > img {
+    width: 3em;
+    height: auto;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.name {
+    border-bottom: 8px dotted  #87b1b0;
+    font-family: 'Coming Soon', cursive;
+    color: #344a70;
+}
+.name div {
+    padding: 0;
+    margin: 0;
+}
+
+.name div:last-child {
+    margin-left: 1em;
+}
+
+.section h2{
+    font-family: 'Coming Soon', cursive;
+    color: #344a70;
+}
+
+.section h2::before{
+    content: "> ";
+    color: #87b1b0;
+}
+
+.desc {
+        font-family: 'Lato', sans-serif;
+}
+
+.card {
+    background-color: #eceff4;
+    border-radius: 1rem;
+    font-size: 1rem;
+    display: flex;
+}
+
+.card img {
+    width: 9em;
+    height: auto;
+    object-fit: contain;
+    border-bottom-left-radius: inherit;
+    border-top-left-radius: inherit;
+}
+
+.card-text {
+    padding: 1em;
+}
+
+.card.rev {
+    justify-content: flex-end;
+
+}
+
+ul.contact {
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 1em;
+    width: 50%;
+    list-style: none;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.contact > li {
+    display: block;
+}
+
+li a{
+    color: #386E90;
+    border: none;
+    text-decoration: none;
+}
+
+li a:hover {
+    color:#87b1b0
+}
+
+.title {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.extra {
+    font-style: italic;
+}
+
+@media (max-width:900px) {
+    .header {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:600px) {
+    .header {
+        flex-direction: column;
+    }
+    .name {
+        width: 50%;
+        justify-content: space-evenly;
+        
+        font-size: 0.5em;
+        display: flex;
+    }
+
+    .name div:last-child{
+        margin: 0;
+    }
+}
